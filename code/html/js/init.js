@@ -11,6 +11,7 @@ var question = [
 
 var answer = 5
 var score = 0
+var time = 10
 
 function don() {
     answer = Math.floor(Math.random() * 8);
@@ -19,8 +20,6 @@ function don() {
 
     document.getElementById('q').innerText = question[answer][Math.floor(Math.random() * question[answer].length)] + '°';
 }
-
-don();
 
 document.querySelectorAll('.select').forEach(function(button) {
 
@@ -33,7 +32,7 @@ document.querySelectorAll('.select').forEach(function(button) {
             score++;
             don();
         } else {
-            alert("ゲームオーバー\nスコア：" + score)
+            gameover();
         }
     });
 });

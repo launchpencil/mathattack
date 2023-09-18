@@ -1,10 +1,15 @@
-#q {
+header {
     width: 74%;
     padding: 10% 10%;
     margin: 3%;
     margin-top: 10%;    
     background-color: rgb(79, 190, 255);
     text-align: center;
+}
+
+#time {
+    display: flex;
+    font-size: x-large;
 }
 
 .yoko {
