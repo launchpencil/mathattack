@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://fred-wang.github.io/mathml.css/mspace.js"></script>
+    <title>三角比早押しゲーム</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="q"></div>
+    <h1 id="q">sin30°</h1>
     <div class="answer">
-        <div class="first">
-            <div>
+        <div class="yoko">
+            <div id="1" class="select">
                 <math><mfrac>
                         <mn>1</mn>
                         <msqrt>
@@ -18,16 +18,17 @@
                         </msqrt>
                     </mfrac></math>
             </div>
-            <div>1</div>
-            <div>
+            <div id="2" class="select">1</div>
+            <div id="3" class="select">
+                <math><mfrac>
                     <msqrt>
                         <mn>3</mn>
                     </msqrt>
                 </mfrac></math>
             </div>
         </div>
-        <div class="second">
-            <div>
+        <div class="yoko">
+            <div id="4" class="select">
                 <math><mfrac>
                         <msqrt>
                             <mn>3</mn>
@@ -35,7 +36,7 @@
                         <mn>2</mn>
                     </mfrac></math>
             </div>
-            <div>
+            <div id="5" class="select">
                 <math><mfrac>
                         <msqrt>
                             <mn>2</mn>
@@ -43,17 +44,18 @@
                         <mn>2</mn>
                     </mfrac></math>
             </div>
-            <div>
+            <div id="6" class="select">
                 <math><mfrac>
                         <mn>1</mn>
                         <mn>2</mn>
                     </mfrac></math>
             </div>
         </div>
-        <div class="third">
-            <div>なし</div>
-            <div>0</div>
+        <div class="yoko">
+            <div id="7" class="select">なし</div>
+            <div id="0" class="select">0</div>
         </div>
     </div>
 </body>
+<script src="index.js"></script>
 </html>

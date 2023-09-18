@@ -1,0 +1,25 @@
+#q {
+    width: 74%;
+    padding: 10% 10%;
+    margin: 3%;
+    margin-top: 10%;    
+    background-color: rgb(79, 190, 255);
+    text-align: center;
+}
+
+.yoko {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.yoko > div {
+    background-color: rgb(167, 167, 167);
+    margin: 2%;
+    width: 28vw;
+    height: 20vh;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
