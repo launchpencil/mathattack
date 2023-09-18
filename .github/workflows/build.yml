@@ -35,7 +35,10 @@ jobs:
       id: docker_build
       uses: docker/build-push-action@v2
       with:
+<<<<<<< HEAD
         context: code
+=======
+>>>>>>> 5470fec59bce371a8edb373176a80b2376f9d211
         platforms: linux/amd64,linux/arm64
         push: true
         tags: ghcr.io/zikanwari/mathattack
