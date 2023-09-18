@@ -38,4 +38,4 @@ jobs:
         context: code
         platforms: linux/amd64,linux/arm64
         push: true
-        tags: ghcr.io/zikanwari/mathattack:latest
+        tags: ghcr.io/zikanwari/mathattack
