@@ -30,6 +30,7 @@ document.querySelectorAll('.select').forEach(function(button) {
 
         if (clickedElementId == answer) {
             score++;
+            time += 2
             don();
         } else {
             gameover();
