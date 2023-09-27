@@ -13,12 +13,39 @@ var answer = 5
 var score = 0
 var time = 10
 
+function resetbutton() {
+    var moTags = document.getElementsByTagName("mo");
+
+    for (var i = 0; i < moTags.length; i++) {
+    moTags[i].textContent = "";
+    }
+}
+
+function replacebutton() {
+    var moTags = document.getElementsByTagName("mo");
+
+    for (var i = 0; i < moTags.length; i++) {
+    moTags[i].textContent = "-";
+    }
+}
+
 function don() {
     answer = Math.floor(Math.random() * 8);
+    answerstr = question[answer][Math.floor(Math.random() * question[answer].length)]
 
     console.log('answer: ' + answer);
 
-    document.getElementById('q').innerText = question[answer][Math.floor(Math.random() * question[answer].length)] + '°';
+    document.getElementById('q').innerText = answerstr + '°';
+
+    if (answerstr.startsWith('cos') || answerstr.startsWith('tan')) {
+        if (answerstr.replace(/[^0-9]/g, '') > 90) {
+            replacebutton();
+        } else {
+            resetbutton();
+        }
+    } else {
+        resetbutton();
+    }
 }
 
 document.querySelectorAll('.select').forEach(function(button) {
