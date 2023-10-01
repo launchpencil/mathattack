@@ -1,49 +1,3 @@
-function gameover() {
-  isplaying = false;
-  clearInterval(gametimer);
-  time = 10
-  score = 0;
-  console.log('game ended: ' + score)
-  setTimeout(function() {
-      alert("ゲームオーバー\nスコア：" + score);
-      gamestart();
-  }, 1);
-}
-
-
-let gametimer;
-let isplaying = false;
-
-function startCountdown() {
-  console.log("game started!");
-  isplaying = true;
-
-  let time = 10;
-  
-  function countdown() {
-    window.time = time;
-    console.log(time);
-    
-    if (time === 0) {
-      gameover();
-      clearInterval(gametimer);
-    } else {
-      time--;
-    }
-  }
-
-  countdown(); // 最初の実行
-
-  gametimer = setInterval(countdown, 1000); // 1秒ごとにカウントダウン関数を実行
-}
-
-function gamestart() {
-    resetbutton();
-    don();
-}
-
-gamestart();
-=======
 var question = [
     ['sin0', 'sin180', 'cos90', 'tan0', 'tan180'],//0
     ['tan30', 'tan150'],//r3 1
@@ -57,6 +11,11 @@ var question = [
 
 var answer = 5
 var score = 0
+var time = 10
+
+window.onload = setInterval(function () {
+    document.getElementById('time').innerText = time;
+}, 100);
 
 function resetbutton() {
     var moTags = document.getElementsByTagName("mo");
@@ -93,21 +52,23 @@ function don() {
     }
 }
 
-don();
-resetbutton();
-
 document.querySelectorAll('.select').forEach(function(button) {
 
     button.addEventListener('click', function (event) {
+
         var clickedElementId = event.currentTarget.id;
 
         console.log(clickedElementId);
 
         if (clickedElementId == answer) {
+            if (!isplaying) {
+                startCountdown();
+            }
             score++;
+            time += 2
             don();
         } else {
-            alert("ゲームオーバー\nスコア：" + score)
+            gameover();
         }
     });
 });
