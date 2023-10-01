@@ -43,7 +43,7 @@ function gamestart() {
 }
 
 gamestart();
-=======
+
 var question = [
     ['sin0', 'sin180', 'cos90', 'tan0', 'tan180'],//0
     ['tan30', 'tan150'],//r3 1
