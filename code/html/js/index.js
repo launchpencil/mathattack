@@ -2,10 +2,10 @@ function gameover() {
     isplaying = false;
     clearInterval(gametimer);
     time = 10
-    score = 0;
     console.log('game ended: ' + score)
     setTimeout(function() {
         alert("ゲームオーバー\nスコア：" + score);
+        score = 0;
         gamestart();
     }, 1);
   }
