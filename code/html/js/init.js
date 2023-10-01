@@ -13,6 +13,10 @@ var answer = 5
 var score = 0
 var time = 10
 
+window.onload = setInterval(function () {
+    document.getElementById('time').innerText = time;
+}, 100);
+
 function resetbutton() {
     var moTags = document.getElementsByTagName("mo");
 
@@ -51,11 +55,15 @@ function don() {
 document.querySelectorAll('.select').forEach(function(button) {
 
     button.addEventListener('click', function (event) {
+
         var clickedElementId = event.currentTarget.id;
 
         console.log(clickedElementId);
 
         if (clickedElementId == answer) {
+            if (!isplaying) {
+                startCountdown();
+            }
             score++;
             time += 2
             don();
