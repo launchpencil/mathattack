@@ -21,7 +21,7 @@ function gameover() {
     let time = 10;
     
     function countdown() {
-      window.time = time;
+      time = window.time;
       console.log(time);
       
       if (time === 0) {
@@ -29,6 +29,7 @@ function gameover() {
         clearInterval(gametimer);
       } else {
         time--;
+					 window.time = time
       }
     }
   
