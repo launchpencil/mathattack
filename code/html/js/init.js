@@ -65,7 +65,7 @@ document.querySelectorAll('.select').forEach(function(button) {
                 startCountdown();
             }
             score++;
-            time += 2
+            time += 1
             don();
         } else {
             gameover();
