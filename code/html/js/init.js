@@ -1,12 +1,12 @@
 var question = [
-    ['sin0', 'sin180', 'cos90', 'tan0', 'tan180'],//0
-    ['tan30', 'tan150'],//r3 1
-    ['tan45', 'tan135', 'sin90', 'cos0', 'cos180'],//1
-    ['tan60', 'tan120'],//r3
-    ['sin60', 'sin120','cos30', 'cos150'],//2 r3
-    ['sin45', 'sin135','cos45', 'cos135'],//2 r2
-    ['sin30', 'sin150','cos60', 'cos120'],//2 1
-    ['tan90']//none
+    [],//0
+    [],//r3 1
+    [],//1
+    [],//r3
+    [],//2 r3
+    [],//2 r2
+    [],//2 1
+    []//none
 ]
 
 var answer = 5
