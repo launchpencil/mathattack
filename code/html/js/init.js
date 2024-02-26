@@ -41,12 +41,13 @@ function don() {
 
     document.getElementById('q').innerText = answerstr + '°';
 
-    if (answerstr.startsWith('cos') || answerstr.startsWith('tan')) {
-        if (answerstr.replace(/[^0-9]/g, '') > 90) {
-            replacebutton();
-        } else {
-            resetbutton();
-        }
+    var number = parseInt(answerstr.replace(/[^0-9]/g, ''))
+
+    if ((answerstr.startsWith('sin') && (180 < number)) ||
+        (answerstr.startsWith('cos') && (90 < number && number <= 270)) ||
+        (answerstr.startsWith('tan') && ((90 < number && number <= 180) || (270 < number && number <= 360)))
+    ) {
+        replacebutton();
     } else {
         resetbutton();
     }
