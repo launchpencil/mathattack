@@ -1,6 +1,6 @@
 var question = [
     [],//0
-    [],//r3 1
+    ["sin<mn>1</mn><mn>6</mn>", "sin<mn>5</mn><mn>6</mn>", "sin<mn>7</mn><mn>6</mn>", "sin<mn>11</mn><mn>6</mn>"],//r3 1
     [],//1
     [],//r3
     [],//2 r3
