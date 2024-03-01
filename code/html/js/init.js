@@ -1,13 +1,81 @@
 var question = [
-    [],//0
-    [],//r3 1
-    [],//1
-    [],//r3
-    [],//2 r3
-    [],//2 r2
-    ["sin<mn>1</mn><mn>6</mn>", "sin<mn>5</mn><mn>6</mn>", "sin<mn>7</mn><mn>6</mn>", "sin<mn>11</mn><mn>6</mn>"],//2 1
-    []//none
-]
+    [
+        "sin<math><mfrac><mn>2</mn><mn>2</mn></mfrac></math>",
+        "cos<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>",
+        "cos<math><mfrac><mn>3</mn><mn>2</mn></mfrac></math>",
+        "sin<math><mfrac><mn>4</mn><mn>2</mn></mfrac></math>",
+        "tan<math><mfrac><mn>2</mn><mn>2</mn></mfrac></math>",
+        "tan<math><mfrac><mn>4</mn><mn>2</mn></mfrac></math>",
+    ],//0
+    [
+        "tan<math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>",
+        "tan<math><mfrac><mn>5</mn><mn>6</mn></mfrac></math>",
+        "tan<math><mfrac><mn>7</mn><mn>6</mn></mfrac></math>",
+        "tan<math><mfrac><mn>11</mn><mn>6</mn></mfrac></math>"
+    ],//r3 1
+    [
+        "sin<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>",
+        "cos<math><mfrac><mn>4</mn><mn>2</mn></mfrac></math>",
+        "cos<math><mfrac><mn>3</mn><mn>2</mn></mfrac></math>",
+        "cos<math><mfrac><mn>2</mn><mn>2</mn></mfrac></math>",
+        "tan<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>",
+        "tan<math><mfrac><mn>3</mn><mn>4</mn></mfrac></math>",
+        "tan<math><mfrac><mn>5</mn><mn>4</mn></mfrac></math>",
+        "tan<math><mfrac><mn>7</mn><mn>4</mn></mfrac></math>"
+    ],//1
+    [
+        "tan<math><mfrac><mn>2</mn><mn>6</mn></mfrac></math>",
+        "tan<math><mfrac><mn>4</mn><mn>6</mn></mfrac></math>",
+        "tan<math><mfrac><mn>8</mn><mn>6</mn></mfrac></math>",
+        "tan<math><mfrac><mn>10</mn><mn>6</mn></mfrac></math>",
+        "tan<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>",
+        "tan<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>",
+        "tan<math><mfrac><mn>4</mn><mn>3</mn></mfrac></math>",
+        "tan<math><mfrac><mn>5</mn><mn>3</mn></mfrac></math>"
+    ],//r3
+    [
+        "sin<math><mfrac><mn>2</mn><mn>6</mn></mfrac></math>",
+        "sin<math><mfrac><mn>4</mn><mn>6</mn></mfrac></math>",
+        "sin<math><mfrac><mn>8</mn><mn>6</mn></mfrac></math>",
+        "sin<math><mfrac><mn>10</mn><mn>6</mn></mfrac></math>",
+        "cos<math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>",
+        "cos<math><mfrac><mn>5</mn><mn>6</mn></mfrac></math>",
+        "cos<math><mfrac><mn>7</mn><mn>6</mn></mfrac></math>",
+        "cos<math><mfrac><mn>11</mn><mn>6</mn></mfrac></math>",
+        "sin<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>",
+        "sin<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>",
+        "sin<math><mfrac><mn>4</mn><mn>3</mn></mfrac></math>",
+        "sin<math><mfrac><mn>5</mn><mn>3</mn></mfrac></math>"
+    ],//2 r3
+    [
+        "sin<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>",
+        "sin<math><mfrac><mn>3</mn><mn>4</mn></mfrac></math>",
+        "sin<math><mfrac><mn>5</mn><mn>4</mn></mfrac></math>",
+        "sin<math><mfrac><mn>7</mn><mn>4</mn></mfrac></math>",
+        "cos<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>",
+        "cos<math><mfrac><mn>3</mn><mn>4</mn></mfrac></math>",
+        "cos<math><mfrac><mn>5</mn><mn>4</mn></mfrac></math>",
+        "cos<math><mfrac><mn>7</mn><mn>4</mn></mfrac></math>"
+    ],//2 r2
+    [
+        "sin<math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>",
+        "sin<math><mfrac><mn>5</mn><mn>6</mn></mfrac></math>",
+        "sin<math><mfrac><mn>7</mn><mn>6</mn></mfrac></math>",
+        "sin<math><mfrac><mn>11</mn><mn>6</mn></mfrac></math>",
+        "cos<math><mfrac><mn>2</mn><mn>6</mn></mfrac></math>",
+        "cos<math><mfrac><mn>4</mn><mn>6</mn></mfrac></math>",
+        "cos<math><mfrac><mn>8</mn><mn>6</mn></mfrac></math>",
+        "cos<math><mfrac><mn>10</mn><mn>6</mn></mfrac></math>",
+        "cos<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>",
+        "cos<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>",
+        "cos<math><mfrac><mn>4</mn><mn>3</mn></mfrac></math>",
+        "cos<math><mfrac><mn>5</mn><mn>3</mn></mfrac></math>"
+    ],//2 1
+    [
+        "tan<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>",
+        "tan<math><mfrac><mn>3</mn><mn>2</mn></mfrac></math>",
+    ]//none
+    ]
 
 var answer = 5
 var score = 0
@@ -39,7 +107,7 @@ function don() {
 
     console.log('answer: ' + answer);
 
-    document.getElementById('q').innerText = answerstr + '°';
+    document.getElementById('q').innerHTML = answerstr + 'π';
 
     var number = parseInt(answerstr.replace(/[^0-9]/g, ''))
 
