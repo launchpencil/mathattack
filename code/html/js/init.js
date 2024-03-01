@@ -80,6 +80,7 @@ var question = [
 var answer = 5
 var score = 0
 var time = 10
+const regex = /<mn>(\d+)<\/mn>/g;
 
 window.onload = setInterval(function () {
     document.getElementById('time').innerText = time;
@@ -109,11 +110,17 @@ function don() {
 
     document.getElementById('q').innerHTML = answerstr + 'π';
 
-    var number = parseInt(answerstr.replace(/[^0-9]/g, ''))
+    let match;
+    let matches = [];
 
-    if ((answerstr.startsWith('sin') && (180 < number)) ||
-        (answerstr.startsWith('cos') && (90 < number && number <= 270)) ||
-        (answerstr.startsWith('tan') && ((90 < number && number <= 180) || (270 < number && number <= 360)))
+    while ((match = regex.exec(answerstr)) !== null) {
+        matches.push(match[1]);
+    }
+    var number = matches[0] / matches[1]
+
+    if ((answerstr.startsWith('sin') && (1 < number)) ||
+        (answerstr.startsWith('cos') && (0.5 < number && number <= 1.5)) ||
+        (answerstr.startsWith('tan') && ((0.5 < number && number <= 1) || (1.5 < number && number <= 2)))
     ) {
         replacebutton();
     } else {
