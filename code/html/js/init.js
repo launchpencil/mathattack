@@ -3,9 +3,7 @@ var question = [
         "sin<math><mfrac><mn>2</mn><mn>2</mn></mfrac></math>",
         "cos<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>",
         "cos<math><mfrac><mn>3</mn><mn>2</mn></mfrac></math>",
-        "sin<math><mfrac><mn>4</mn><mn>2</mn></mfrac></math>",
         "tan<math><mfrac><mn>2</mn><mn>2</mn></mfrac></math>",
-        "tan<math><mfrac><mn>4</mn><mn>2</mn></mfrac></math>",
     ],//0
     [
         "tan<math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>",
@@ -14,8 +12,7 @@ var question = [
         "tan<math><mfrac><mn>11</mn><mn>6</mn></mfrac></math>"
     ],//r3 1
     [
-        "sin<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>",
-        "cos<math><mfrac><mn>4</mn><mn>2</mn></mfrac></math>",
+        "sin<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>", 
         "cos<math><mfrac><mn>3</mn><mn>2</mn></mfrac></math>",
         "cos<math><mfrac><mn>2</mn><mn>2</mn></mfrac></math>",
         "tan<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>",
@@ -24,20 +21,12 @@ var question = [
         "tan<math><mfrac><mn>7</mn><mn>4</mn></mfrac></math>"
     ],//1
     [
-        "tan<math><mfrac><mn>2</mn><mn>6</mn></mfrac></math>",
-        "tan<math><mfrac><mn>4</mn><mn>6</mn></mfrac></math>",
-        "tan<math><mfrac><mn>8</mn><mn>6</mn></mfrac></math>",
-        "tan<math><mfrac><mn>10</mn><mn>6</mn></mfrac></math>",
         "tan<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>",
         "tan<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>",
         "tan<math><mfrac><mn>4</mn><mn>3</mn></mfrac></math>",
         "tan<math><mfrac><mn>5</mn><mn>3</mn></mfrac></math>"
     ],//r3
     [
-        "sin<math><mfrac><mn>2</mn><mn>6</mn></mfrac></math>",
-        "sin<math><mfrac><mn>4</mn><mn>6</mn></mfrac></math>",
-        "sin<math><mfrac><mn>8</mn><mn>6</mn></mfrac></math>",
-        "sin<math><mfrac><mn>10</mn><mn>6</mn></mfrac></math>",
         "cos<math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>",
         "cos<math><mfrac><mn>5</mn><mn>6</mn></mfrac></math>",
         "cos<math><mfrac><mn>7</mn><mn>6</mn></mfrac></math>",
@@ -62,10 +51,6 @@ var question = [
         "sin<math><mfrac><mn>5</mn><mn>6</mn></mfrac></math>",
         "sin<math><mfrac><mn>7</mn><mn>6</mn></mfrac></math>",
         "sin<math><mfrac><mn>11</mn><mn>6</mn></mfrac></math>",
-        "cos<math><mfrac><mn>2</mn><mn>6</mn></mfrac></math>",
-        "cos<math><mfrac><mn>4</mn><mn>6</mn></mfrac></math>",
-        "cos<math><mfrac><mn>8</mn><mn>6</mn></mfrac></math>",
-        "cos<math><mfrac><mn>10</mn><mn>6</mn></mfrac></math>",
         "cos<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>",
         "cos<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>",
         "cos<math><mfrac><mn>4</mn><mn>3</mn></mfrac></math>",
